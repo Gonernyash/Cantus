@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/prb2vyi.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans|Oswald&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://kit.fontawesome.com/608230cf7f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.plrjs.com/player/493863ih4e32h/yx8um022wsdy.js"></script>
+    <title>Cantus</title>
+</head>
+<body>
+
+<div class="header" id='header'>
+    <div class="nav" id="nav">
+        <div class="nav__inner">
+            <hr class="nav__line">
+            <div class="nav__item active"><a href="#" class="nav__link">home</a></div>
+            <hr class="nav__line">
+            <div class="nav__item"><a href="#" class="nav__link">events</a></div>
+            <hr class="nav__line">
+            <div class="nav__item"><a href="#" class="nav__link">gallery</a></div>
+            <hr class="nav__line">
+            <div class="nav__item"><a href="#" class="nav__link">news</a></div>
+            <hr class="nav__line">
+            <div class="nav__item"><a href="#" class="nav__link">albums</a></div>
+            <hr class="nav__line">
+            <div class="nav__item"><a href="#" class="nav__link">pages</a></div>
+            <hr class="nav__line">
+        </div>
+
+        <div class="logo"><img src="../assets/img/Logo/Logo.jpg" alt=""></div>
+
+        <div class="soc-media">
+
+            <div class="soc-media__inner">
+
+                <div class="soc-media__item soc-media__item--margin header__soc-media">
+                    <i class="soc-media__ico fab fa-facebook-f"></i>
+                    <div class="soc-media__text">32k</div>
+                </div>
+
+                <div class="soc-media__item soc-media__item--margin header__soc-media">
+                    <i class="soc-media__ico fab fa-twitter"></i>
+                    <div class="soc-media__text">55k</div>
+                </div>
+
+                <div class="soc-media__item soc-media__item--margin header__soc-media">
+                    <i class="soc-media__ico fab fa-google-plus-g"></i>
+                    <div class="soc-media__text">23k</div>
+                </div>
+
+                <button class="welcome__button welcome__button--white header__button">purchase ticket</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="nav__title">Cantus</div>
+    <button class="nav-toggle" id="nav-toggle" type="button">
+        <span class="nav-toggle__item"></span>
+    </button>
+
+    <div class="blackout" id="blackout"></div>
+</div>
+
+<div class="intro" id="intro">
+    <div class="welcome">
+            <div class="intro__inner">
+                <div class="intro__title">Let’s Rock</div>
+                <div class="intro__subtitle">With Cantus</div>
+                <button class="welcome__button" id = "discover-more">discover more</button>
+            </div>
+    </div>
+
+    <div class="search">
+        <div class="search__title"><span class="search__span">cantus </span>find the music your Choice & discover
+            our new tracks.<br>Connect directly with your favorite band member.
+        </div>
+        <div class="search__container">
+            <div class="search__bar">
+                <input type="text" class="search__input" id="search">
+                <div class="search__button"><i class="fas fa-search"></i></div>
+            </div>
+
+            <div class="search__hints none" id = "search-hints">
+                <div class="hints__item">Search hint</div>
+                <div class="hints__item">Search hint</div>
+                <div class="hints__item">Search hint</div>
+                <div class="hints__item">Search hint</div>
+                <div class="hints__item">Search hint</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="progress__bar"></div>
+
+
+<div class="main">
+    <div class="container">
+        <section class="section">
+
+            <div class="section__title">introducing</div>
+            <div class="section__subtitle">Our Members</div>
+
+            <div class="slider-buttons">
+                <div class="slider-buttons__inner">
+
+                    <button class="slider-button" id="members-slider-prev"><i class="fas fa-angle-left"></i></button>
+                    <button class="slider-button" id="members-slider-next"><i class="fas fa-angle-right"></i></button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="members__container">
+            <div class="members">
+
+                <div id="members-slider" class="members__slider">
+
+                    <div>
+                        <div class="members__item">
+                            <img src="../assets/img/Members/1.jpg" alt="" class="members__img">
+                            <div class="members__inner">
+                                <div class="member__name">John Smith</div>
+                                <div class="member__role">Vocal</div>
+
+                                <div class="members__links">
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-facebook-f"></i>
+                                        <div class="soc-media__text">32k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-twitter"></i>
+                                        <div class="soc-media__text">55k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-google-plus-g"></i>
+                                        <div class="soc-media__text">23k</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="members__item">
+                            <img src="../assets/img/Members/2.jpg" alt="" class="members__img">
+                            <div class="members__inner">
+                                <div class="member__name">Rendi Outhor</div>
+                                <div class="member__role">Drum</div>
+
+                                <div class="members__links">
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-facebook-f"></i>
+                                        <div class="soc-media__text">32k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-twitter"></i>
+                                        <div class="soc-media__text">55k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-google-plus-g"></i>
+                                        <div class="soc-media__text">23k</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="members__item">
+                            <img src="../assets/img/Members/3.jpg" alt="" class="members__img">
+                            <div class="members__inner">
+                                <div class="member__name">Renes Odim</div>
+                                <div class="member__role">Guitar</div>
+
+                                <div class="members__links">
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-facebook-f"></i>
+                                        <div class="soc-media__text">32k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-twitter"></i>
+                                        <div class="soc-media__text">55k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-google-plus-g"></i>
+                                        <div class="soc-media__text">23k</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="members__item">
+                            <img src="https://placehold.it/370x470" alt="" class="members__img">
+                            <div class="members__inner">
+                                <div class="member__name">Name</div>
+                                <div class="member__role">Role</div>
+
+                                <div class="members__links">
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-facebook-f"></i>
+                                        <div class="soc-media__text">32k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-twitter"></i>
+                                        <div class="soc-media__text">55k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-google-plus-g"></i>
+                                        <div class="soc-media__text">23k</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="members__item">
+                            <img src="https://placehold.it/370x470" alt="" class="members__img">
+                            <div class="members__inner">
+                                <div class="member__name">Name</div>
+                                <div class="member__role">Role</div>
+
+                                <div class="members__links">
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-facebook-f"></i>
+                                        <div class="soc-media__text">32k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-twitter"></i>
+                                        <div class="soc-media__text">55k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-google-plus-g"></i>
+                                        <div class="soc-media__text">23k</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="members__item">
+                            <img src="https://placehold.it/370x470" alt="" class="members__img">
+                            <div class="members__inner">
+                                <div class="member__name">Name</div>
+                                <div class="member__role">Role</div>
+
+                                <div class="members__links">
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-facebook-f"></i>
+                                        <div class="soc-media__text">32k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-twitter"></i>
+                                        <div class="soc-media__text">55k</div>
+                                    </div>
+
+                                    <div class="soc-media__item">
+                                        <i class="soc-media__ico fab fa-google-plus-g"></i>
+                                        <div class="soc-media__text">23k</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--members__slider-->
+
+            </div> <!--members-->
+        </div>
+
+
+        <div class="parting">
+
+            <div class="concerts">
+                <section class="section">
+                    <div class="section__title">upcoming</div>
+                    <div class="section__subtitle">Concert</div>
+
+                    <div class="slider-buttons">
+                        <div class="slider-buttons__inner"></div>
+                    </div>
+                </section>
+
+                <div id="concerts-slider">
+
+                    <div>
+                        <div class="concerts__inner" data-concert>
+                            <div class="concerts__pic">
+                                <img src="../assets/img/Concerts/1.jpg" alt="" class="concert__img">
+                                <div class="concerts__date">
+                                    <div class="concerts__day">13</div>
+                                    <div class="concerts__month">Jul</div>
+                                </div>
+                            </div>
+                            <div class="concert__description">
+                                <div class="concert__text">
+                                    <div class="concert__name">Texas Rocks nation 2016</div>
+                                    <p class="concert__info">
+                                        Location : 31 Great Smith Street, <br>
+                                        Date : July 13, 2017 <br>
+                                        Time : 10:00 AM <br>
+                                        Price : $40 <br>
+                                    </p>
+                                </div>
+
+                                <button class="welcome__button welcome__button--center">purchase ticket</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="concerts__inner" data-concert>
+                            <div class="concerts__pic">
+                                <img src="https://placehold.it/270x289" alt="" class="concert__img">
+                                <div class="concerts__date">
+                                    <div class="concerts__day">day</div>
+                                    <div class="concerts__month">month</div>
+                                </div>
+                            </div>
+                            <div class="concert__description">
+                                <div class="concert__text">
+                                    <div class="concert__name">Title</div>
+                                    <p class="concert__info">
+                                        Location : <br>
+                                        Date : <br>
+                                        Time : <br>
+                                        Price : <br>
+                                    </p>
+                                </div>
+
+                                <button class="welcome__button welcome__button--center">purchase ticket</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="concerts__inner" data-concert>
+                            <div class="concerts__pic">
+                                <img src="https://placehold.it/270x289" alt="" class="concert__img">
+                                <div class="concerts__date">
+                                    <div class="concerts__day">day</div>
+                                    <div class="concerts__month">month</div>
+                                </div>
+                            </div>
+                            <div class="concert__description">
+                                <div class="concert__text">
+                                    <div class="concert__name">Title</div>
+                                    <p class="concert__info">
+                                        Location : <br>
+                                        Date : <br>
+                                        Time : <br>
+                                        Price : <br>
+                                    </p>
+                                </div>
+
+                                <button class="welcome__button welcome__button--center">purchase ticket</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="concerts__drag-background">
+                    <div class="concerts__drag" id="drag"></div>
+                </div>
+
+            </div>
+
+            <div class="videos">
+                <section class="section">
+
+                    <div class="section__title">Latest</div>
+                    <div class="section__subtitle">Videos</div>
+
+                    <div class="slider-buttons">
+                        <div class="slider-buttons__inner">
+
+                            <button class="slider-button" id="video-slider-prev"><i class="fas fa-angle-left"></i>
+                            </button>
+                            <button class="slider-button" id="video-slider-next"><i class="fas fa-angle-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </section>
+
+                <div class="video__inner" id='video-slider'>
+
+
+                    <div>
+                        <div class="video__item">
+                            <div id='player0' style="height: 100%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="video__item">
+                            <div id='player1' style="height: 100%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="video__item">
+                            <div id='player2' style="height: 100%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="founder">
+            <div class="founder__inner">
+                <div class="founder__title">Our Founder staying in our hearts</div>
+                <div class="founder__subtitle">1982 <span class="founder__span">cantus</span> Start jurny and now it‘s
+                    top
+                    class Rock Band in the California.
+                </div>
+                <button class="welcome__button welcome__button--white welcome__button--founder">learn more</button>
+            </div>
+        </div>
+
+        <div class="parting">
+
+            <div class="songs">
+                <section class="section">
+                    <div class="section__title">popular</div>
+                    <div class="section__subtitle">Songs</div>
+
+                    <div class="slider-buttons">
+                        <div class="slider-buttons__inner"></div>
+                    </div>
+                </section>
+
+                <iframe id="soundcloud" class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/95440304&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+                <div class="songs__scrollbar">
+                    <div class="songs__inner">
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/95440304">
+                            <div class="song__name">The Day The World...</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102178873">
+                            <div class="song__name">Demon Seed</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/95440308">
+                            <div class="song__name">Deep</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102178828">
+                            <div class="song__name">Head Down</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/95440317">
+                            <div class="song__name">Echoplex</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/95440316">
+                            <div class="song__name">Discipline</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102166834">
+                            <div class="song__name">Lights in the Sky</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102170473">
+                            <div class="song__name">Letting You</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102168693">
+                            <div class="song__name">Almost Home</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255770833">
+                            <div class="song__name">In This Twilight (fennesz)</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255770806">
+                            <div class="song__name">Vessel (bill laswell)</div>
+                        </div>
+                        <div class="song"
+                             data-songURL="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255770634">
+                            <div class="song__name">Only (Richard X Mix)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="song song__name test__song" id='test-song'></div>
+
+            </div>
+
+            <div class="insta">
+                <section class="section">
+                    <div class="section__title">Instagram</div>
+                    <div class="section__subtitle">Feed</div>
+
+                    <div class="slider-buttons">
+                        <div class="slider-buttons__inner"></div>
+                    </div>
+                </section>
+
+                <div class="insta__inner">
+
+                    <div class="insta__row">
+                        <div class="insta__item">
+                            <img src="../assets/img/feed/1.jpg" alt="" class="insta__img">
+                        </div>
+
+                        <div class="insta__item">
+                            <img src="../assets/img/feed/2.jpg" alt="" class="insta__img">
+                        </div>
+                    </div>
+
+                    <div class="insta__row">
+                        <div class="insta__item">
+                            <img src="../assets/img/feed/3.jpg" alt="" class="insta__img">
+                        </div>
+
+                        <div class="insta__item">
+                            <img src="../assets/img/feed/4.jpg" alt="" class="insta__img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="download">
+            <div class="download__inner">
+                <div class="download__text">
+                    <div class="download__title">Download Our Official Apps</div>
+                    <div class="download__subtitle">Never stop listening. Take your playlists and likes wherever
+                        you
+                        go.
+                    </div>
+                </div>
+                <div class="download__buttons">
+                    <a href='https://www.apple.com/ru/ios/app-store/'><img class='store-button'
+                                                                           src='../assets/img/stores/apple.png'/></a>
+                    <a href="https://play.google.com/store/apps?hl=ru"><img class='store-button'
+                                                                            src='../assets/img/stores/google.png'/></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <div class="subscribe__inner">
+                <input type="email" class="subscribe__input" id="subscribe-input" placeholder="subscribe newsletter">
+                <div class="subscribe__button"><i class="fas fa-arrow-right arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="outro">
+
+    <div class="out-menu">
+        <div class="out-menu__part">
+            <div class="out-menu__item">home</div>
+            <div class="out-menu__item">events</div>
+            <div class="out-menu__item">gallery</div>
+        </div>
+        <div class="out-menu__part">
+            <div class="out-menu__item">news</div>
+            <div class="out-menu__item">albums</div>
+            <div class="out-menu__item">pages</div>
+        </div>
+    </div>
+
+    <div class="copyright">Copyright © 2009–2016 <span class="copyright__span">cantus</span> © their respective
+        owners.
+        Shipped from Salem, Mass. USA.
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../assets/js/app.js"></script>
+
+</body>
+</html>

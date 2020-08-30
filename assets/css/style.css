@@ -1,0 +1,1394 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+button:focus, input:focus, .slick-slide:focus {
+    outline: 0;
+}
+
+.none {
+    display: none !important;
+}
+
+.test__song {
+    position: absolute;
+    top: 260px;
+    z-index: 0;
+}
+
+/*Container*/
+
+.container {
+    width: 100%;
+    max-width: 1155px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*Main*/
+
+.main {
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 65px;
+}
+
+/*Header*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #df001f;
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/*Navigation*/
+
+.nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 30;
+    transition: width .2s linear;
+}
+
+.nav.toggled{
+    width: 70%;
+}
+
+.header.toggled{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+
+.header.toggled .header__button {
+    display: block;
+}
+
+.nav__inner {
+    flex: 1 1 0;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    margin: 42px 50px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav__item {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 16.6666666%;
+}
+
+.nav__line {
+    display: none;
+    margin: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav__item:hover:before, .nav__item.active:before {
+    display: block;
+    content: '';
+    background-color: #ffffff;
+    width: 100%;
+    height: 1px;
+
+    position: absolute;
+    top: 7px;
+}
+
+.nav__title {
+    display: none;
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+    border: 0;
+    background: none;
+    text-decoration: none;
+}
+
+.nav-toggle.toggled .nav-toggle__item {
+    transform: rotate(45deg);
+}
+
+.nav-toggle.toggled .nav-toggle__item:before {
+    display: none;
+}
+
+.nav-toggle.toggled .nav-toggle__item:after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.nav-toggle__item {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.nav-toggle__item:before, .nav-toggle__item:after {
+    display: block;
+    content: "";
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle__item:before {
+    top: 10px;
+}
+
+.nav-toggle__item:after {
+    top: -10px;
+}
+
+.blackout {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: .6;
+}
+
+.blackout.toggled {
+    display: block;
+}
+
+/*Logo*/
+
+.logo {
+    flex: 1 1 0;
+}
+
+.logo img {
+    margin: 0 auto;
+}
+
+/*Social Media*/
+
+.soc-media {
+    flex: 1 1 0;
+
+    position: relative;
+
+}
+
+.soc-media__inner {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.soc-media__item--margin {
+    margin: 38px 0;
+}
+
+.soc-media__item {
+    display: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.soc-media__text {
+    margin: 0 10px;
+}
+
+.soc-media__ico {
+    font-size: 24px;
+}
+
+.welcome__button {
+    width: 200px;
+    height: 50px;
+    margin: 25px 20px;
+    padding: 0;
+    border: 0;
+    border-radius: 50px;
+    background-color: #df001f;
+
+    font-family: "Droid Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    transition: background-color .2s linear;
+}
+
+.welcome__button--white {
+    background-color: #ffffff;
+    color: #df001f;
+}
+
+.welcome__button--founder {
+    width: 160px;
+    background-color: #ffffff;
+
+}
+
+.welcome__button--founder:hover {
+    color: #ffffff;
+    background-color: #df001f !important;
+}
+
+.welcome__button:hover {
+    color: #ffffff;
+    background-color: #333333;
+}
+
+/*Intro*/
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    max-height: 700px;
+    position:relative;
+    padding-top: 100px;
+    overflow: hidden;
+    transition: max-height 1s linear;
+}
+
+.intro--search {
+    max-height: 583px;
+}
+
+.welcome {
+    background: url('../img/intro/background.jpg') left no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    position: relative;
+}
+
+.intro__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+}
+
+.intro__title {
+    font-weight: bold;
+    font-size: 116px;
+    color: #df001f;
+    text-transform: uppercase;
+}
+
+.intro__subtitle {
+    font-family: "Great Vibes", sans-serif;
+    font-size: 80px;
+    text-shadow: #ffffff 1px 1px 0, #ffffff -1px -1px 0,
+    #ffffff -1px 1px 0, #ffffff 1px -1px 0;
+}
+
+.search {
+    background: url("../img/intro/background-search.jpg") left no-repeat;
+    width: 100%;
+    height: 100vh;
+    max-height: 583px;
+}
+
+.search__title {
+    font-family: 'Droid Sans', sans-serif;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 170px;
+    padding-bottom: 50px;
+}
+
+.search__span {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 65px;
+}
+
+.search__container {
+    width: 530px;
+    margin: 0 auto;
+}
+
+.search__bar {
+    position: relative;
+    border-bottom: 4px solid #b4a8a7;
+}
+
+.search__input {
+    font-family: 'Droid Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    letter-spacing: .2em;
+
+    width: 93%;
+    background: transparent;
+    margin: 0;
+    border: 0;
+    padding: 10px 0;
+}
+
+.search__button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 16px;
+    color: #df001f;
+}
+
+.search__hints {
+    max-height: 185px;
+    width: 100%;
+    border: 1px solid #423c3a;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hints__item {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hints__item:hover {
+    background-color: rgba(41, 41, 41, 0.8);
+    border-top: 1px solid #423c3a;
+    border-bottom: 1px solid #423c3a;
+}
+
+.hints__item:first-child:hover {
+    border-top: 0;
+}
+
+.hints__item:last-child:hover {
+    border-bottom: 0;
+}
+
+.progress__bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #d3d3d3;
+
+    position: relative;
+}
+
+.progress__bar:after {
+    display: block;
+    content: '';
+    width: 80%;
+    height: 3px;
+    background-color: #df001f;
+
+    position: absolute;
+    top: 0;
+}
+
+/*Section*/
+
+.section {
+    margin-top: 100px;
+}
+
+.section__title {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    color: #333333;
+
+}
+
+.section__subtitle {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 32px;
+
+    color: #df001f;
+}
+
+/*Slider buttons*/
+
+.slider-buttons {
+    width: 100%;
+    height: 45px;
+
+    position: relative;
+}
+
+.slider-buttons__inner {
+    position: absolute;
+    right: 0;
+}
+
+.slider-button {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: 0;
+    background-color: #df001f;
+
+    font-size: 24px;
+    color: #ffffff;
+
+    transition: background-color .2s linear;
+}
+
+.slider-button:focus {
+    outline: 0;
+}
+
+.slider-button:hover {
+    background-color: #333333;
+}
+
+/*Members*/
+
+.members {
+    width: 100%;
+}
+
+.members__container {
+    margin: 0 -10px;
+}
+
+.members__item {
+    max-width: 370px;
+    position: relative;
+    margin: 0 10px;
+}
+
+.members__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.members__inner {
+    width: 100%;
+    height: 18%;
+    background-color: #df001f;
+
+    padding: 5px 25px;
+
+    position: absolute;
+    bottom: 0;
+
+    transition: height .2s linear;
+
+}
+
+.member__name {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.member__role {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+
+    margin-bottom: 16px;
+}
+
+.members__item:hover .members__inner {
+    height: 27%;
+}
+
+.members__item:hover .members__links {
+    display: flex;
+}
+
+.members__links {
+    display: none;
+}
+
+/*Parting*/
+
+.parting {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 95px;
+}
+
+/*Concerts*/
+
+.concerts {
+    width: 62%;
+}
+
+.concerts__inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.concerts__pic {
+    position: relative;
+}
+
+.concerts__date {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+}
+
+.concerts__day {
+    font-size: 45px;
+}
+
+.concerts__month {
+    font-size: 32px;
+    letter-spacing: .1em;
+}
+
+.concert__img {
+    width: 270px;
+}
+
+.concert__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.concert__text {
+    margin: 0 20px;
+}
+
+.concert__name {
+    font-size: 22px;
+    color: #333333;
+}
+
+.concert__info {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16px;
+
+}
+
+.concerts__drag-background {
+    display: block;
+    position: relative;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #d3d3d3;
+    margin: 5px 0;
+}
+
+.concerts__drag {
+    display: block;
+    position: absolute;
+    height: 4px;
+    background-color: #df001f;
+
+    width: 25%;
+    left: 0;
+    transition: left .3s linear;
+}
+
+.videos {
+    width: 33%;
+}
+
+.video__item {
+    height: 289px;
+}
+
+/*Founder*/
+
+.founder {
+    background: url("../img/background/founder.jpg") right no-repeat;
+    height: 370px;
+    padding: 70px 0;
+    margin-bottom: 100px;
+}
+
+.founder__inner {
+    width: 665px;
+    max-width: 100%;
+    padding-left: 100px;
+}
+
+.founder__title {
+    color: #ffffff;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.founder__subtitle {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.founder__span {
+    font-family: "Great Vibes", sans-serif;
+    font-size: 65px;
+
+}
+
+.songs {
+    width: 62%;
+    position: relative;
+}
+
+.soundcloud {
+    position: relative;
+    z-index: 5;
+}
+
+.songs__scrollbar {
+    height: 148px;
+    overflow-y: auto;
+    width: 94%;
+    position: absolute;
+    bottom: 0;
+}
+
+.songs__scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 50px;
+}
+
+.songs__scrollbar::-webkit-scrollbar-button {
+    background-color: #ffffff
+}
+
+.songs__scrollbar::-webkit-scrollbar-thumb {
+    background-color: #df001f;
+    border-radius: 20px;
+}
+
+.songs__scrollbar::-webkit-scrollbar-track {
+    background-color: #d1d1d1;
+    border-radius: 20px;
+}
+
+.songs__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+
+.song {
+    display: flex;
+    width: 30%;
+    padding: 7px 0 10px 0;
+    border-bottom: 1px solid #ebebeb;
+
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.song:hover {
+    background-color: #df001f;
+    border-radius: 5px;
+
+    transition: background-color .2s linear;
+}
+
+.song__name {
+    padding-left: 5px;
+}
+
+.insta {
+    width: 33%;
+}
+
+.insta__inner {
+
+}
+
+.insta__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.insta__row:first-child {
+    margin-bottom: 31px;
+}
+
+.insta__item {
+    display: block;
+    background-color: #ec008c;
+    max-width: 100%;
+    height: auto;
+    width: 170px;
+
+}
+
+.insta__item:first-child {
+    margin-right: 31px;
+}
+
+.insta__img {
+    transition: opacity .2s linear;
+    max-width: 100%;
+    height: auto;
+}
+
+.insta__img:hover {
+    opacity: 40%;
+}
+
+/*Download*/
+
+.download {
+    width: 100%;
+    height: 354px;
+    color: #ffffff;
+    text-align: center;
+
+    background: url('../img/background/download.jpg') no-repeat right;
+    padding: 80px 0;
+    margin-bottom: 100px;
+}
+
+.download__text {
+    margin-bottom: 40px;
+}
+
+.download__title {
+    font-size: 32px;
+}
+
+.download__subtitle {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 22px;
+}
+
+.download__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.download__buttons a {
+    width: 172px;
+}
+
+.store-button {
+    margin: 5px;
+}
+
+/*Subscribe*/
+
+.subscribe {
+    max-width: 570px;
+    margin: 0 auto 70px;
+    padding: 0 10px;
+}
+
+.subscribe__inner {
+    display: flex;
+    position: relative;
+    padding: 15px 0;
+    border-bottom: 4px solid #999999;
+}
+
+.subscribe__button {
+    padding-left: 15px;
+}
+
+.arrow-right {
+    color: #df001f;
+}
+
+.subscribe__input {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 16px;
+
+    color: #282828;
+
+    width: 95%;
+    border: 0;
+}
+
+.subscribe__input::placeholder {
+    letter-spacing: .2em;
+}
+
+.outro {
+    max-width: 630px;
+    margin: 0 auto;
+
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 13px;
+}
+
+.out-menu {
+    display: flex;
+    padding: 0 70px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.out-menu__part {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.out-menu__item {
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    height: 20px;
+}
+
+.out-menu__item:hover {
+    border-bottom: 2px solid #df001f;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.copyright__span {
+    font-family: "Great Vibes", sans-serif;
+    font-size: 28px;
+    color: #df001f;
+}
+
+@media (max-width: 1430px) {
+
+    /*  Header  */
+
+    .logo {
+        display: none;
+    }
+
+}
+
+@media (max-width: 990px) {
+
+    /*  Header  */
+    .header {
+        height: 80px;
+    }
+
+    .nav__inner {
+        flex-grow: 2;
+        margin: 33px 20px;
+    }
+
+    .soc-media {
+        position: relative;
+    }
+
+    .welcome__button {
+        margin: 15px 20px;
+    }
+
+
+    .header__soc-media {
+        display: none;
+    }
+
+    /*  Intro  */
+
+    .intro {
+        padding-top: 80px;
+    }
+
+    .welcome {
+        background: url('../img/intro/background-mini.jpg') left no-repeat;
+    }
+
+    .intro__title {
+        font-size: 90px;
+    }
+
+    .intro__subtitle {
+        font-size: 60px;
+    }
+
+    /*Search*/
+
+    .search__title {
+        font-size: 26px;
+    }
+
+    .search__span {
+        font-size: 57px;
+    }
+
+    /*  Section  */
+    .section {
+        margin-top: 65px;
+    }
+
+    .section__title {
+        font-size: 30px;
+    }
+
+    .section__subtitle {
+        font-size: 30px;
+    }
+
+    /*  Members  */
+    .members {
+        margin-bottom: 65px;
+        position: relative;
+        display: block;
+    }
+
+    .members__inner {
+        padding: 0 25px;
+    }
+
+    .member__name {
+        font-size: 20px;
+    }
+
+    .member__role {
+        font-size: 14px;
+    }
+
+    /* Concerts  */
+
+    .concerts {
+        width: 100%;
+    }
+
+    .concerts__inner {
+        max-width: 550px;
+        height: auto;
+    }
+
+    /*  Videos  */
+
+    .videos {
+        width: 100%;
+    }
+
+    /*  Founder  */
+
+    .founder {
+        margin-bottom: 50px;
+    }
+
+    .founder__inner {
+        padding-left: 20px;
+        text-shadow: #000000 2px 2px 0, #000000 -2px -2px 0,
+        #000000 -2px 2px 0, #000000 2px -2px 0;
+    }
+
+    .founder__title {
+        font-size: 28px;
+    }
+
+    .founder__subtitle {
+        font-size: 18px;
+    }
+
+    .founder__span {
+        font-size: 50px;
+    }
+
+    /*  Songs  */
+
+    .songs {
+        width: 100%;
+    }
+
+    .songs__scrollbar {
+        position: initial;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    /*  Instagram  */
+
+    .insta {
+        width: 100%;
+    }
+
+    .insta__inner {
+        display: flex;
+    }
+
+    .insta__row {
+        width: 50%;
+    }
+
+    .insta__row:first-child {
+        margin: 0;
+    }
+
+    .insta__item {
+        margin: 0 auto;
+    }
+
+    .insta__item:first-child {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .header {
+        height: 60px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 0;
+        height: 100vh;
+        background-color: #df001f;
+
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+
+    .nav__title {
+        display: block;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav__inner {
+        flex-direction: column;
+        flex: 0;
+        margin: 0;
+    }
+
+    .soc-media__inner {
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+
+    .nav__item {
+        margin: 16px auto;
+        width: initial;
+    }
+
+    .nav__line {
+        display: block;
+    }
+
+    .soc-media__item--margin {
+        margin: 0;
+        padding: 5px 0;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .header__button {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        display: none;
+    }
+
+    /*  Intro  */
+    .intro {
+        padding-top: 60px;
+    }
+
+    .intro__title {
+        font-size: 69px;
+    }
+
+    .intro__subtitle {
+        font-size: 40px;
+    }
+
+    /*Search*/
+    .search {
+        background: url("../img/intro/background-search-mini.jpg") left no-repeat;
+    }
+
+    .search__title {
+        font-size: 19px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .search__span {
+        font-size: 40px;
+    }
+
+    .search__container {
+        width: 80%;
+    }
+
+    /*  Section  */
+    .section {
+        margin-top: 50px;
+    }
+
+    .section__title {
+        font-size: 28px;
+    }
+
+    .section__subtitle {
+        font-size: 28px;
+    }
+
+    /*  Members  */
+    .members {
+        padding: 0 7px;
+        margin: 0;
+    }
+
+    .members__item {
+        margin: 0 auto;
+    }
+
+    .members__inner {
+        padding: 5px 25px;
+    }
+
+    .member__name {
+        font-size: 22px;
+    }
+    .member__role {
+        font-size: 16px;
+    }
+
+    /*Videos*/
+
+    .video__item {
+        height: 289px;
+    }
+
+    /*  Founder  */
+
+    .founder__inner {
+        padding-left: 50px;
+    }
+
+    /*  Instagram  */
+
+    .insta__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insta__row {
+        width: initial;
+    }
+
+    .insta__row:first-child {
+        margin-bottom: 25px;
+    }
+
+    .insta__item {
+        margin: 0;
+        max-width: initial;
+        height: 169px;
+    }
+
+    .insta__item:first-child {
+        margin: 0 25px 0 0;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .main {
+        margin: 0;
+    }
+
+    /*  Intro  */
+
+    .welcome {
+        background: linear-gradient(to right, #e6eaeb, #ffffff 50%, #e6eaeb);
+    }
+
+    .intro__inner {
+        width: 100%;
+    }
+
+    .intro__subtitle {
+        text-shadow: none;
+    }
+
+    /*Search*/
+
+    .search {
+        background: linear-gradient(90deg, rgba(9,22,41,1) 5%, rgba(39,66,106,1) 40%, rgba(77,47,45,1) 60%, rgba(27,9,5,1) 95%);
+    }
+
+
+    /*  Concerts  */
+
+    .concerts__inner {
+        flex-direction: column;
+    }
+
+    .concert__img {
+        margin: 0 auto;
+    }
+
+    .concert__description {
+        margin: 20px 0;
+    }
+
+    .concert__text {
+        text-align: center;
+    }
+
+    .welcome__button--center {
+        margin: 0 auto;
+    }
+
+    /* Video */
+    .video__item {
+        height: 240px;
+    }
+
+    /*  Founder  */
+
+    .founder {
+        padding: 30px 0;
+    }
+
+    .founder__inner {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* Songs */
+    .songs__inner {
+
+    }
+
+    .song {
+       width: 45%;
+    }
+
+    /*  Instagram  */
+
+    .insta__item {
+        width: 130px;
+        height: 129px;
+    }
+
+    /* Download */
+
+    .download__title {
+        font-size: 28px;
+    }
+
+    .download__subtitle {
+        font-size: 18px;
+    }
+
+    .download__buttons {
+        flex-direction: column;
+    }
+
+    .download__buttons a {
+        margin: 0 auto;
+    }
+
+    .outro {
+        margin-bottom: 20px;
+    }
+
+    .out-menu {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .out-menu__part {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .out-menu__item {
+        margin: 15px 0;
+    }
+}
